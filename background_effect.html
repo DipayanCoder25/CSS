@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background-Effects</title>
+<style>
+body{
+	background-image: url('https://media.istockphoto.com/id/528341369/photo/light-of-american-soccer-stadium.jpg?s=612x612&w=0&k=20&c=WTOHWA2j_M9LZLD0jvbdQIrfnjarNDBIGevqmch1Wjk=');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+}
+p{
+	height:200px;
+	width: 300px;
+	background-color: darkviolet;
+	opacity: 0.5;
+	font-weight: bold;
+	font-size:10px;
+	color:blue;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 30px;
+}
+#demo1{
+	height:300px;
+	width:400px;
+	margin-left:300px;
+	background:linear-gradient(yellow,blue,gray,green);
+
+}
+#demo2{
+	height:300px;
+	width:400px;
+	margin-left:300px;
+
+	background:linear-gradient(45deg,#8FBC8F,#FF8C00,#90EE90);
+}
+#demo3{
+		height:300px;
+	width:600px;
+	margin-left:300px;
+	margin-top:120px;
+
+	background:linear-gradient(145deg,#8FBC8F,#FF8C00,#90EE90);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	text-align: center;
+	text-shadow: 2px 4px 4 px  rgba(0,206,209,1.0);
+	background-size:300% 300%;
+	animation: gradientMove 10s ease infinite;
+
+}
+@keyframes gradientMove{
+	0%{
+		background-position: 0% 50%;
+		background-color: lavender;
+
+	}
+	50%{
+		background-position: 50% 50%;
+		background-color: burlywood;
+
+	}
+	100%{
+		background-position:75% 80%;
+		background-color: orangered;
+	}
+}
+#demo4{
+	height:300px;
+	width:400px;
+	margin-top:200px;
+	margin-left:300px;
+	background: radial-gradient(#FF1493,#1E90FF);
+}
+</style>
+</head>
+<body>
+<p> Footbal Stadium  </p>
+<div id="demo1">
+
+</div>
+<div id="demo2">
+
+</div>
+<div id="demo3">
+<h3>FIFA WORLD CUP 2026</h3>
+
+</div>
+<div id="demo4">
+
+</div>
+</body>
+</html>
