@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Box model</title>
+	<style>
+		body{
+			font-family: Arial sans-serif;
+			margin: 0px;
+			border: 0px;
+			display: flex;
+		}
+		#sidebar{
+			position: fixed;
+			width: 200px;
+			height: 100vh;
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		#sidebar h2{
+			color:#fofofo;
+
+		}
+		#sidebar{
+			list-style: none;
+			padding: 0px;
+		}
+		#sidebar ul li{
+			margin: 15px 0;
+		}
+		#article {
+			margin-left:260;
+			padding: 20px;
+			width: calc(100% - 260px);
+			background-color: #f9f9f9;
+
+		}
+		#article h1{
+			color: #333;
+		}
+		#image_galary{
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			gap:10px;
+			padding: 20px;
+		}
+		#image_galary img{
+			width: 100%;
+			height: auto;
+			border: 2px solid #ddd;
+			border-radius: 5px;
+		}
+		#image_galary img:hover{
+			opacity: 0.5;
+		}
+		#image1{
+			width: 300px;
+			height: 200px;
+		}
+
+
+	</style>
+</head>
+<body>
+<div id="sidebar">
+	<h2>Sidebar Menu</h2>
+	<ul>
+		<li><a href="https://www.google.com" style="text-decoration: none;color:white;">Home</li></a>
+			<li><a href="https://www.google.com" style="text-decoration: none;color:white;">Services</li></a>
+	<li><a href="https://www.google.com" style="text-decoration: none;color:white;">About</li></a>
+	<li><a href="https://www.google.com" style="text-decoration: none;color:white;">Contract</li></a>
+	</ul>
+
+  </div>
+
+  <div id="artical_title">
+  	<h1>Artical Tittle</h1>
+  	<p>This is the main content of the article section. Here, you can include text, images, and other multimedia
+
+elements as part of your content layout.</p>
+	<div id="image_galary">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+	</div>
+	<div id="image_galary">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+		<img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="image 1" id="image1">
+	</div>
+</body>
+</html>
