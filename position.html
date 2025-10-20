@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Position </title>
+		<style>
+			
+			body{
+				margin: 0;
+				font-family: Arial sans-serif;
+				background-color: #f7f7f7;
+
+			}
+			header{
+				background: #2b5797;
+				color: white;
+				text-align: center;
+				padding: 15px;
+				top: 0;
+				z-index: 100;
+				position: sticky;
+			}
+			nav{
+				background: #4a6fa5;
+				color: white;
+				padding: 10px;
+				text-align: center;
+			}
+			nav a{
+				color: white;
+				text-decoration: none;
+
+				margin: 0 15px;
+				font-weight: bold;
+			}
+
+			nav a::hover{
+				text-decoration: underline;
+				background-color: blueviolet;
+				color: black;
+			}
+
+
+			.content{
+				padding: 10px;
+				text-align: center;
+			}
+			main{
+				background: white;
+				display:inline-block;
+				width: 68%;
+				padding: 20px;
+				vertical-align: center;
+				box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			}
+			aside{
+				background: #e8e8e8;
+				display: inline-block;
+				width: 25%;
+				padding: 20px;
+				margin-left: 10px;
+				vertical-align: top;
+
+			}
+
+			footer{
+				background: #333;
+				color: white;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.position_example{
+				background: #fdfdfd;
+				margin-top: 20px;
+				border: 2px dotted #aaa;
+				padding: 20px;
+				position: relative;
+			}	
+			.static_box{
+				background: #d3eafd;
+
+				padding: 10px;
+				position: static;
+			}
+			.absolute_box{
+				background: #fff5cc;
+
+				padding: 10px;
+				position: absolute;
+				top: 50px;
+				right: 20px;
+				width: 150px;
+				border: 1px solid #ccc;
+
+			}
+			.relative_box{
+				background: #fff5cc;
+
+				padding: 10px;
+				position: relative;
+				top: 50px;
+				right: 20px;
+				width: 150px;
+				border: 1px solid #ccc;
+			}
+			.fixed-box{
+				background: #c5e1a5;
+				padding: 10px;
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+				border-radius: 8px;
+				box-shadow: 0 0 6px rgba(0,0,0,0.3);
+			}
+			.sticky_box{
+				background: #f9d7a0;
+				padding: 10px;
+				position: sticky;
+				top: 10px;
+				margin: 10 0px;
+				border: 1 px solid #e1a948;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>CSS Positioning Example</h1>
+		</header>
+		<nav>
+
+			<a href="#">Home</a>
+			<a href="#">Example</a>
+			<a href="#">Contact</a>
+		</nav>
+
+		<div class="content">
+
+			<main>
+				<div class="Positioning_examples">
+					<h3>Positioning Demonstration</h3>
+					<div class="static_box">Static (default) — positioned normally in flow.</div>
+					<div class="absolute_box">Absolute — positioned 50px from top and 20px from right of parent..</div>
+					<div class="relative_box">Relative — moved 15px down, 20px right from its original place.</div>
+					<div class="sticky_note">Sticky — scroll to see me stick!.</div>
+				</div>
+			</main>
+			<aside>
+				<h3>Sidebar</h3>
+				<p>This sidebar uses <strong>display: inline-block</strong>.</p>
+
+				<p>You can add widgets or links here.</p>
+			</aside>
+		</div>
+		<footer>
+			<p>&copy; 2025 My Website || All rights preserved</p>
+				<div class="fixed-box">
+				Fixed Box — Always visible (bottom-right)
+			</div>
+
+			</main>
+	</body>
+</html>
